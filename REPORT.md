@@ -11,7 +11,7 @@ The task is episodic, and in order to solve the environment, **the agents must g
 
 The environment is considered solved, when the average (over 100 episodes) of those **scores is at least +0.5.**
 
-![Trained Agent][images/tennis.png]
+![Tennis Agents](images/tennis.png)
 
 ## Environment details
 
@@ -62,7 +62,7 @@ For this project I have used a variant of DDPG called **Multi Agent Deep Determi
 
 > We explore deep reinforcement learning methods for multi-agent domains. We begin by analyzing the difficulty of traditional algorithms in the multi-agent case: Q-learning is challenged by an inherent non-stationarity of the environment, while policy gradient suffers from a variance that increases as the number of agents grows. We then present an adaptation of actor-critic methods that considers action policies of other agents and is able to successfully learn policies that require complex multi-agent coordination. Additionally, we introduce a training regimen utilizing an ensemble of policies for each agent that leads to more robust multi-agent policies. We show the strength of our approach compared to existing methods in cooperative as well as competitive scenarios, where agent populations are able to discover various physical and informational coordination strategies.
 
-![MADDPG algorithm](./images/MADDPG-alo.png) (screenshot from the paper)
+![MADDPG algorithm](./images/MADDPG-algo.png) (screenshot from the paper)
 
 
 The main concept behind this algorithm is summarized in this illustration taken from the paper :
@@ -213,7 +213,7 @@ Both Neural Networks use the Adam optimizer with a learning rate of 1e-4 (actors
 
 Given the chosen architecture and parameters, our results are :
 
-![Training results](images/training_results.png)
+![Training results](images/Results.png)
 
 **These results meets the project's expectation as the agent is able to receive an average reward (over 100 episodes) of at least +0.5 in 2487 episodes** 
 
